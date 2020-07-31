@@ -1,0 +1,29 @@
+{
+  "name": "noximo/composer-rehearsal",
+  "version": "0.1",
+  "description": "Substitute real packages with their local copies for easier development of libraries",
+  "keywords": [
+    "composer",
+    "development",
+    "library",
+    "local"
+  ],
+  "type": "composer-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "noximo\\Rehearsal\\": "src"
+    }
+  },
+  "require": {
+    "php": "^7.3",
+    "composer-plugin-api": "^1.1 || ^2.0"
+  },
+  "require-dev": {
+    "composer/composer": "2.0.x-dev"
+  },
+  "extra": {
+    "class": "noximo\\Rehearsal\\RehearsalPlugin"
+  },
+  "minimum-stability": "dev"
+}
